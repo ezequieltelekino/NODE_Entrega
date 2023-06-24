@@ -1,0 +1,12 @@
+<div>
+   <form>
+      
+   </form>
+   <h1> Ésta es lista de productos en tiempo real</h1>
+            {{#each listaDeProductos}}
+               <p> {{this.id}} | {{this.title}} | {{this.code}} | {{this.price}}</p>
+            {{/each}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
